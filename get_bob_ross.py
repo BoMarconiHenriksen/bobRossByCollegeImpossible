@@ -45,6 +45,7 @@ if __name__ == '__main__':
 def convert_file_dict():
     #bob_ross_dict = {}
     with open("BobRoss.txt", encoding='utf8') as fp:  # , "r"
+        global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
             line.split(None, 1) for line in fp]}
         # De 2 linjer oven over erstatter nedenstående linjer.
@@ -55,4 +56,10 @@ def convert_file_dict():
     print(list(bob_ross_dict.items())[1])
 
 
+def countLines():
+    print("There are ", len(bob_ross_dict.keys()),
+          "lines ine the Bob Ross dataset.")
+
+
 convert_file_dict()
+countLines()
