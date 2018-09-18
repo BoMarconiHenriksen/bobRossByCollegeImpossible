@@ -6,7 +6,7 @@ Gifted PErceotion: https://github.com/HawkDon/Python_Assignment1
 
 - [ ] It converts/cleans-up the input data into a form that is more suitable.
 
-- [ ] Bo:   How many lines does the .txt file have?  
+- [x] Bo:   How many lines does the .txt file have?  
 - [ ] Anders:     How many times does the .txt file write "RUINED" ?  
 - [ ] Christian:  How many different users does the .txt file contain ?  
 - [ ]            What is most used word in the .txt file ?
