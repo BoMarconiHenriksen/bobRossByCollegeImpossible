@@ -21,3 +21,5 @@ Dokumentation
 - [ ] Hvilke dependencies har det
 - [ ] Have to be able to read the results on the front-page of your repository.  
 
+# Dokumentation
+for at hente datasettet pastes følgende url ind som parameter i get_bob_ross https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt
