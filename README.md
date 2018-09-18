@@ -15,6 +15,9 @@ Gifted PErceotion: https://github.com/HawkDon/Python_Assignment1
 - [ ] It produces output in a suitable form.  
 - [ ] OBS: You will have one high-level function per question.  
 
+Diverse  
+Har vi den rigtige struktur?  
+
 Dokumentation
 - [ ] Kort beskrivelse af projektet  
 - [ ] Hvordan køres det? Clones osv. 
