@@ -8,6 +8,7 @@ Usage:
 import os
 import sys
 from urllib import request as req
+import count_words
 
 file_name = None
 
@@ -43,16 +44,14 @@ if __name__ == '__main__':
 
 
 def convert_file_dict():
-    #bob_ross_dict = {}
-    with open("BobRoss.txt", encoding='utf8') as fp:  # , "r"
+    with open("BobRoss.txt", encoding='utf8') as fp:
+        global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
-            line.split(None, 1) for line in fp]}
-        # De 2 linjer oven over erstatter nedenstående linjer.
-        # for line in fp:
-        #   key, value = line.strip().split(None, 1)
-        #  bob_ross_dict[key] = value
+            line.strip().split(None, 1) for line in fp]}
+
     # print(bob_ross_dict)
     print(list(bob_ross_dict.items())[1])
 
 
 convert_file_dict()
+count_words.count_frequency_words(bob_ross_dict)
