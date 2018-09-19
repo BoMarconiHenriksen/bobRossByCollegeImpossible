@@ -50,7 +50,8 @@ def convert_file_dict():
             line.strip().split(None, 1) for line in fp]}
 
     # print(bob_ross_dict)
-    print(list(bob_ross_dict.items())[1])
+    # print(list(bob_ross_dict.items())[1])
+    print(count_words.count_frequency_words(bob_ross_dict))
 
 
 convert_file_dict()

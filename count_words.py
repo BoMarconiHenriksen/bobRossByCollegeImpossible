@@ -4,10 +4,20 @@ import re
 
 def count_frequency_words(dict):
 
-    split_values = {key: value.strip().split(None, 50)
-                    for key, value in dict.items()}
+    # return "hello count"
+    chatArr = []
+    stringArr = list(dict.items())
+    #myarr = re.findall(':\s(.*)\'\)', str(stringArr))
+    for line in stringArr:
+        myarr = re.findall(':\s(.*)\'\)', str(line))
+        if len(myarr) > 0:
+            chatArr.append(myarr[0])
+        # chatArr.append(myarr)
 
-    return print(split_values)
+    wordArr = []
+    for chatMessage in chatArr:
+        for word in chatMessage.split():
+            wordArr.append(word)
 
-    #word_frequency = Counter(split_values.values())
-    # return print(word_frequency)
+    count_words = Counter(wordArr)
+    return count_words.most_common(20)
