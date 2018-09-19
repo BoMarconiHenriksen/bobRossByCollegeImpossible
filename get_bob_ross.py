@@ -7,7 +7,11 @@ Usage:
 
 import os
 import sys
+from datetime import datetime
+import time
 from urllib import request as req
+import email
+from collections import Counter
 
 file_name = None
 
@@ -43,16 +47,27 @@ if __name__ == '__main__':
 
 
 def convert_file_dict():
-    #bob_ross_dict = {}
+    # bob_ross_dict = {}
     with open("BobRoss.txt", encoding='utf8') as fp:  # , "r"
+        global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
-            line.split(None, 1) for line in fp]}
+            line.strip().split(None, 1) for line in fp]}
+
         # De 2 linjer oven over erstatter nedenstående linjer.
         # for line in fp:
         #   key, value = line.strip().split(None, 1)
         #  bob_ross_dict[key] = value
     # print(bob_ross_dict)
-    print(list(bob_ross_dict.items())[1])
+    # print(list(bob_ross_dict.items())[1])
+
+
+def messages_after_5pm():
+    for key, value in bob_ross_dict.items():
+        a = {}
+        if key == '2015-10-29T17:00:06.067409Z':
+            a[key] = value
+    print(a)
 
 
 convert_file_dict()
+messages_after_5pm()
