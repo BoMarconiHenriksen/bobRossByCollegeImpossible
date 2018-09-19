@@ -8,6 +8,7 @@ Usage:
 import os
 import sys
 from urllib import request as req
+import usernames
 
 file_name = None
 
@@ -52,7 +53,8 @@ def convert_file_dict():
         #   key, value = line.strip().split(None, 1)
         #  bob_ross_dict[key] = value
     # print(bob_ross_dict)
-    print(list(bob_ross_dict.items())[1])
+    #print(list(bob_ross_dict.items())[1])
+    print(usernames.get_username_count(bob_ross_dict))
 
 
 convert_file_dict()
