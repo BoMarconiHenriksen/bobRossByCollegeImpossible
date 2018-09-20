@@ -14,8 +14,6 @@ import count_lines
 import count_user_names
 
 
-file_name = None
-
 
 def download(from_url, to_file):
     if not os.path.isfile(to_file):
@@ -24,7 +22,7 @@ def download(from_url, to_file):
 
 if __name__ == '__main__':
     try:
-
+        global file_name
         _, url, file_name = sys.argv
     except:
         try:
@@ -37,6 +35,7 @@ if __name__ == '__main__':
                 cfg_file = 'list_of_files.txt'
                 with open(cfg_file) as fp:
                     for line in fp:
+
                         file_name = os.path.basename(line.rstrip())
                         url = line
                         download(url, file_name)
@@ -48,7 +47,7 @@ if __name__ == '__main__':
 
 
 def convert_file_dict():
-    with open("BobRoss.txt", encoding='utf8') as fp:
+    with open(file_name, encoding='utf8') as fp: 
         global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
             line.strip().split(None, 1) for line in fp]}
