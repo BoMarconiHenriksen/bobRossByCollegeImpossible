@@ -8,7 +8,6 @@ Usage:
 import os
 import sys
 from urllib import request as req
-import usernames
 import after_17
 import count_lines
 import count_user_names
@@ -55,7 +54,7 @@ def convert_file_dict():
 
     # Til test
     # print(bob_ross_dict)
-    #print(list(bob_ross_dict.items())[1])
+    # print(list(bob_ross_dict.items())[1])
 
 
 convert_file_dict()
