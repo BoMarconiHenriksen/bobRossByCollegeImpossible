@@ -26,7 +26,7 @@ python get_bob_ross.py [<url_to_dataset>]
   python get_bob_ross.py [<url_to_dataset>] [<file_name>]  
 
 ## Dependencies
-The project does only use dependencies which is part of the anaconda installation.  
+The project does only use dependencies which is part of Pythons Anaconda installation.  
 
 ## The Result
 ### How many lines does the .txt file have?  
