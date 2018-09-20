@@ -21,9 +21,9 @@ How many messages was written after 05:00 ?
 2. cd into the directory of the project   
 3. to run the project you need to paste this link as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
 4. example of how to run the project  
-python get_bob_ross.py [ <url> ]  
+python get_bob_ross.py [<url_to_dataset>]  
   or  
-  python get_bob_ross.py [ <url> ] [<file_name>]  
+  python get_bob_ross.py [<url_to_dataset>] [<file_name>]  
 
 ## Dependencies
 The project does only use dependencies which is part of the anaconda installation.  
