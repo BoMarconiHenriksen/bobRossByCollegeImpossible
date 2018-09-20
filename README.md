@@ -13,7 +13,7 @@ We have been looking at Gifted Perceptions dataset https://github.com/HawkDon/Py
 How many lines does the .txt file have?  
 How many times does the .txt file write "RUINED" ?  
 How many different users does the .txt file contain ?  
-What is most used word in the .txt file ?
+What is most used word in the .txt file?  
 How many messages was written after 05:00 ?  
 
 ## How to run the project?
@@ -21,9 +21,9 @@ How many messages was written after 05:00 ?
 2. cd into the directory of the project   
 3. to run the project you need to paste this link as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
 4. example of how to run the project  
-python get_bob_ross.py [<url>]  
+python get_bob_ross.py [ <url> ]  
   or  
-  python get_bob_ross.py [<url>] [<file_name>]  
+  python get_bob_ross.py [ <url> ] [<file_name>]  
 
 ## Dependencies
 The project does only use dependencies which is part of the anaconda installation.  
