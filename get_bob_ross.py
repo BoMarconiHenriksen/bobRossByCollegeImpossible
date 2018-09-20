@@ -9,6 +9,8 @@ import os
 import sys
 from urllib import request as req
 import count_lines
+import count_user_names
+
 
 file_name = None
 
@@ -49,9 +51,12 @@ def convert_file_dict():
         bob_ross_dict = {key: value for key, value in [
             line.strip().split(None, 1) for line in fp]}
 
+    # Til test
+
     # print(bob_ross_dict)
-    print(list(bob_ross_dict.items())[1])
+    # print(list(bob_ross_dict.items())[1])
 
 
 convert_file_dict()
 count_lines.countLines(bob_ross_dict)
+print(count_user_names.get_username_count(bob_ross_dict))
