@@ -52,7 +52,6 @@ def convert_file_dict():
             line.strip().split(None, 1) for line in fp]}
 
     # Til test
-
     # print(bob_ross_dict)
     # print(list(bob_ross_dict.items())[1])
 
