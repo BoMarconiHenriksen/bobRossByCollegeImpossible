@@ -34,6 +34,42 @@ How many messages was written after 05:00 ?
 4. For at køre projektet skrives enten python get_bob_ross.py [<url>] eller python get_bob_ross.py [<url>] [<file_name>]  
 
 ## Dependencies
-Projektet har ingen dependencies udover, hvad der er med i Anaconda installationen.
+Projektet har ingen dependencies udover, hvad der følger med i Anaconda installationen.
 
-for at hente datasettet pastes følgende url ind som parameter i get_bob_ross https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt
+## Resultat
+### How many lines does the .txt file have?  
+There are  181533 lines ine the Bob Ross datasetet.  
+
+### How many times does the .txt file write "RUINED" ?  
+
+
+### How many different users does the .txt file contain ?  
+There are 67568 diffrent users in BobRussel.txt.  
+
+### How many messages was written after 05:00 ? 
+After 5pm there are 96481 messages.  
+
+### What is most used word in the .txt file ?
+KappaRoss, 67403  
+is, 7194  
+BibleThump, 6847  
+Kreygasm, 6598  
+the, 6030  
+PogChamp, 5858  
+this, 4739  
+I, 4445  
+a, 4319,  
+RUINED, 4108  
+VAC, 3581  
+Kappa, 3464  
+Bob, 3394  
+***, 3111  
+BOB, 3071  
+it, 2889  
+to, 2795  
+gg, 2623  
+you, 2523  
+bob, 2492  
+
+
+
