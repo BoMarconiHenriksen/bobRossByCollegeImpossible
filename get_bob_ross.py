@@ -1,8 +1,10 @@
 """
-Beskrivelse her
+Henter BobRoss.txt og konventer tekst filen til et dictionary.
 
 Usage:
-    python downloader.py [<url>] [<file_name>]
+    python get_bob_ross.py [<url>] 
+    or
+    python get_bob_ross.py [<url>] [<file_name>]
 """
 
 import os
