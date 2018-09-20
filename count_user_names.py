@@ -15,4 +15,4 @@ def get_username_count(bob_ross_dict):
             nameDict.setdefault(names_in_line[0], 0)
             nameDict[names_in_line[0]] += 1
 
-    return print(f'Der er {len(nameDict)} forskellige brugere i BobRussel.txt.')
+    return print(f'There are {len(nameDict)} diffrent users in BobRussel.txt.')

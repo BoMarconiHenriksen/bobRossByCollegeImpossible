@@ -20,4 +20,4 @@ def count_frequency_words(dict):
             wordArr.append(word)
 
     count_words = Counter(wordArr)
-    return count_words.most_common(20)
+    return print(f'The 20 most used words are: {count_words.most_common(20)}')
