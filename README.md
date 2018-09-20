@@ -1,25 +1,14 @@
 # Bob Ross By CollegeImpossible
 
-Opgaven 
-
-Gifted Perception: 
-
 Skal vi gøre noget ved outputtet af de 20 mest brugte ord? Det er ikke så pænt.
 
 Skulle vi lave et plot i den sidste opgave?
 
 
-
-Dokumentation
-- [ ] Kort beskrivelse af projektet  
-- [ ] Hvordan køres det? Clones osv. 
-- [ ] Hvilke dependencies har det
-- [ ] Have to be able to read the results on the front-page of your repository.  
-
 # Dokumentation
-Repositoryet er College Impossibles besvarelse af opgaven https://github.com/datsoftlyngby/dat4sem2018fall-python/blob/master/assignments/assignment1.md.  
+This repository is College Impossibles answer of the exercise https://github.com/datsoftlyngby/dat4sem2018fall-python/blob/master/assignments/assignment1.md.  
 
-Vi har set på Gifted Perceptions dataset (https://github.com/HawkDon/Python_Assignment1) og besvaret de 5 spørgsmål som er:  
+We have been looking at Gifted Perceptions dataset https://github.com/HawkDon/Python_Assignment1 and answered the 5 questions:  
 
 How many lines does the .txt file have?  
 How many times does the .txt file write "RUINED" ?  
@@ -27,16 +16,19 @@ How many different users does the .txt file contain ?
 What is most used word in the .txt file ?
 How many messages was written after 05:00 ?  
 
-## Hvordan køres projektet?
-1. Clone projektet  
-2. cd til det clonede projekt  
-3. For at køre projektet skal følgende link pastes ind som parameter efter get_bob_ross.py https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
-4. For at køre projektet skrives enten python get_bob_ross.py [<url>] eller python get_bob_ross.py [<url>] [<file_name>]  
+## How to run the project?
+1. clone the project  
+2. cd into the directory of the project   
+3. to run the project you need to paste this link as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
+4. example of how to run the project  
+python get_bob_ross.py [<url>]  
+  or  
+  python get_bob_ross.py [<url>] [<file_name>]  
 
 ## Dependencies
-Projektet har ingen dependencies udover, hvad der følger med i Anaconda installationen.
+The project does only use dependencies which is part of the anaconda installation.  
 
-## Resultat
+## The Result
 ### How many lines does the .txt file have?  
 There are  181533 lines ine the Bob Ross datasetet.  
 
