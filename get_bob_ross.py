@@ -1,15 +1,20 @@
 """
-Beskrivelse her
+Henter BobRoss.txt og konventer tekst filen til et dictionary.
 
 Usage:
-    python downloader.py [<url>] [<file_name>]
+    python get_bob_ross.py [<url>] 
+    or
+    python get_bob_ross.py [<url>] [<file_name>]
 """
 
 import os
 import sys
 from urllib import request as req
+import most_used_words
+import after_17
+import count_lines
+import count_user_names
 
-file_name = None
 
 
 def download(from_url, to_file):
@@ -19,7 +24,7 @@ def download(from_url, to_file):
 
 if __name__ == '__main__':
     try:
-
+        global file_name
         _, url, file_name = sys.argv
     except:
         try:
@@ -32,6 +37,7 @@ if __name__ == '__main__':
                 cfg_file = 'list_of_files.txt'
                 with open(cfg_file) as fp:
                     for line in fp:
+
                         file_name = os.path.basename(line.rstrip())
                         url = line
                         download(url, file_name)
@@ -43,16 +49,18 @@ if __name__ == '__main__':
 
 
 def convert_file_dict():
-    #bob_ross_dict = {}
-    with open("BobRoss.txt", encoding='utf8') as fp:  # , "r"
+    with open(file_name, encoding='utf8') as fp: 
+        global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
-            line.split(None, 1) for line in fp]}
-        # De 2 linjer oven over erstatter nedenstående linjer.
-        # for line in fp:
-        #   key, value = line.strip().split(None, 1)
-        #  bob_ross_dict[key] = value
+            line.strip().split(None, 1) for line in fp]}
+
+    # Til test
     # print(bob_ross_dict)
-    print(list(bob_ross_dict.items())[1])
+    # print(list(bob_ross_dict.items())[1])
 
 
 convert_file_dict()
+count_lines.countLines(bob_ross_dict)
+print(count_user_names.get_username_count(bob_ross_dict))
+print(after_17.message_after_hour(bob_ross_dict, 17))
+most_used_words.count_frequency_words(bob_ross_dict)
