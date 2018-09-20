@@ -14,7 +14,7 @@ import most_used_words
 import after_17
 import count_lines
 import count_user_names
-
+import help_functions
 
 
 def download(from_url, to_file):
@@ -64,3 +64,4 @@ count_lines.countLines(bob_ross_dict)
 print(count_user_names.get_username_count(bob_ross_dict))
 print(after_17.message_after_hour(bob_ross_dict, 17))
 most_used_words.count_frequency_words(bob_ross_dict)
+print(help_functions.line_pattern(bob_ross_dict, ""))
