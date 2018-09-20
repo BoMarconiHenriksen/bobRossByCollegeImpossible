@@ -4,6 +4,7 @@ Skal vi gøre noget ved outputtet af de 20 mest brugte ord? Det er ikke så pæn
 
 Skulle vi lave et plot i den sidste opgave?
 
+Christian 09-20 kl.22.55:  God ide med et plot. jeg ved ikke om det skal gøres pænere. Jeg tror det er meget vigtigere at gøre koden bedre (hvis vi kan). Skal vi flytte noget af koden ud af get_bob_ross.py og hente teksten ind som en liste af strenge istedet for en dictionary? 
 
 # Dokumentation
 This repository is College Impossibles answer of the exercise https://github.com/datsoftlyngby/dat4sem2018fall-python/blob/master/assignments/assignment1.md.  
