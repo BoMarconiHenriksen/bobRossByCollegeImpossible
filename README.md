@@ -17,10 +17,10 @@ What is most used word in the .txt file?
 How many messages was written after 05:00 ?  
 
 ## How to run the project?
-1. clone the project  
-2. cd into the directory of the project   
-3. to run the project you need to paste this link as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
-4. example of how to run the project  
+1. Clone the project  
+2. Cd into the directory of the project   
+3. To run the project you need to paste the url to the dataset as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
+4. Example of how to run the project  
 python get_bob_ross.py [<url_to_dataset>]  
   or  
   python get_bob_ross.py [<url_to_dataset>] [<file_name>]  
