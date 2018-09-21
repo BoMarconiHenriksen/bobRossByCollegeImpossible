@@ -4,7 +4,8 @@ import re
 def chat_messages(dict):
     chat_list = []
     for line in list(dict.items()):
-        message = re.findall(':\s(.*)\'\)', str(line)) # finds the chatmessage in a line
+        # finds the chatmessage in a line: the string between the first colon-space and the last ping-parent
+        message = re.findall(':\s(.*)\'\)', str(line)) 
         if len(message) > 0:
             chat_list.append(message[0])
     return chat_list
