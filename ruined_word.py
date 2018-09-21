@@ -1,9 +1,10 @@
 def ruin_work():
-    inputData = open('BobRoss.txt').readlines()
+    inputData = open('BobRoss.txt', encoding='utf8').readlines()
     counter = 0
     for line in inputData:
-        if (" Ruined " in line) or (" ruined " in line) or (" RUINED " in line):
+        if ("Ruined" in line) or ("ruined" in line) or ("RUINED" in line):
             counter += 1
-    print(counter)
+    print(f'The text file write RUNIED, Ruined and ruined {counter} times.')
+
 
 ruin_work()
