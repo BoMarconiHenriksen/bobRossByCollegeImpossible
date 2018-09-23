@@ -3,5 +3,5 @@
  """
 
 
-def countLines(dict):
+def count_lines(dict):
     return f"There are {str(len(dict.keys()))} lines ine the Bob Ross datasetet."

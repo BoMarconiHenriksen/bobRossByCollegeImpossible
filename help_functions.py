@@ -4,10 +4,10 @@ import os
 import sys
 from urllib import request as req
 
+# Returnere en dictionary baseret på en dictionary af strings
+# og en regex der matcher alle eksempler på et mønster i hvert key, value par.
+# Key bliver det første match i hver linje, value bliver det samlede antal af første matches
 
-""" returnere en dictionary baseret på en dictionary af strings
- og en regex der matcher alle eksempler på et mønster i hvert key, value par.
- Key bliver det første match i hver linje, value bliver det samlede antal af første matches"""
 
 def line_pattern(string_dictionary, regex):
     pattern_dict = {}
@@ -20,10 +20,10 @@ def line_pattern(string_dictionary, regex):
     return pattern_dict
 
 
-
 def download(from_url, to_file):
     if not os.path.isfile(to_file):
         req.urlretrieve(from_url, to_file)
+
 
 def bob_ross_file():
     try:
@@ -34,7 +34,7 @@ def bob_ross_file():
             _, url = sys.argv
             file_name = os.path.basename(url)
         except:
-            
+
             try:
 
                 # open file
@@ -49,12 +49,14 @@ def bob_ross_file():
             except Exception as e:
                 print(__doc__)
                 sys.exit(1)
-            
+
     download(url, file_name)
     return file_name
 
+
+# Konveter en text fil til et dictionary.
 def convert_file_dict(bob_ross_file):
-    with open(bob_ross_file, encoding='utf8') as fp: 
+    with open(bob_ross_file, encoding='utf8') as fp:
         global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
             line.strip().split(None, 1) for line in fp]}
