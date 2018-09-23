@@ -1,12 +1,6 @@
 # Bob Ross By CollegeImpossible
 
-Skal vi gøre noget ved outputtet af de 20 mest brugte ord? Det er ikke så pænt.
-
-Skulle vi lave et plot i den sidste opgave?
-
-Christian 09-20 kl.22.55:  God ide med et plot. jeg ved ikke om det skal gøres pænere. Jeg tror det er meget vigtigere at gøre koden bedre (hvis vi kan). Skal vi flytte noget af koden ud af get_bob_ross.py og hente teksten ind som en liste af strenge istedet for en dictionary? 
-
-# Dokumentation
+## Dokumentation
 This repository is College Impossibles answer of the exercise https://github.com/datsoftlyngby/dat4sem2018fall-python/blob/master/assignments/assignment1.md.  
 
 We have been looking at Gifted Perceptions dataset https://github.com/HawkDon/Python_Assignment1 and answered the 5 questions:  
@@ -20,11 +14,11 @@ How many messages was written after 05:00 ?
 ## How to run the project?
 1. Clone the project  
 2. Cd into the directory of the project   
-3. To run the project you need to paste the url to the dataset as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
+3. To run the project you need to paste this url to the dataset as a parameter https://raw.githubusercontent.com/HawkDon/Python_Assignment1/master/BobRoss.txt  
 4. Example of how to run the project  
 python get_bob_ross.py [<url_to_dataset>]  
   or  
-  python get_bob_ross.py [<url_to_dataset>] [<file_name>]  
+  python get_bob_ross.py [<url_to_dataset>] [<your_own_file_name>]  
 
 ## Dependencies
 The project does only use dependencies which is part of Pythons Anaconda installation.  
@@ -63,6 +57,3 @@ to, 2795
 gg, 2623  
 you, 2523  
 bob, 2492  
-
-
-
