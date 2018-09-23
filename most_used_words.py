@@ -1,23 +1,17 @@
 from collections import Counter
 import re
 
+def chat_messages(dict):
+    chat_list = []
+    for line in list(dict.items()):
+        # finds the chatmessage in a line: the string between the first colon-space and the last ping-parent
+        message = re.findall(':\s(.*)\'\)', str(line)) 
+        if len(message) > 0:
+            chat_list.append(message[0])
+    return chat_list
 
 def count_frequency_words(dict):
-
-    # return "hello count"
-    chatArr = []
-    stringArr = list(dict.items())
-    #myarr = re.findall(':\s(.*)\'\)', str(stringArr))
-    for line in stringArr:
-        myarr = re.findall(':\s(.*)\'\)', str(line))
-        if len(myarr) > 0:
-            chatArr.append(myarr[0])
-        # chatArr.append(myarr)
-
-    wordArr = []
-    for chatMessage in chatArr:
-        for word in chatMessage.split():
-            wordArr.append(word)
-
-    count_words = Counter(wordArr)
-    return print(f'The 20 most used words are: {count_words.most_common(20)}')
+    all_messages = ' '.join(chat_messages(dict))
+    word_list = [word for word in all_messages.split()]
+    count_words = Counter(word_list)
+    return f'The 20 most used words are: {count_words.most_common(20)}'

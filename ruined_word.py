@@ -1,13 +1,19 @@
 """
     Funktionen tæller, hvor mange gange ordet ruined (i diverse former) forekommer i datasættet.
 """
+import help_functions
+
+
 def ruin_word():
-    inputData = open('BobRoss.txt', encoding='utf8').readlines() #Bruger open() metoden til, at åbne txt filen direkte og læser derefter, hver linje
+    # Bruger open() metoden til, at åbne txt filen.
+    inputData = open(help_functions.get_text_file(), encoding='utf8')
     counter = 0
-    for line in inputData: #Itererer over txt filen som inputData
-        if ("Ruined" in line) or ("ruined" in line) or ("RUINED" in line): #Tæller forekomster af ordet ruined (i diverse former)
+    for line in inputData:  # Itererer over txt filen som inputData
+        # Tæller forekomster af ordet ruined (i diverse former)
+        if ("Ruined" in line) or ("ruined" in line) or ("RUINED" in line):
             counter += 1
-    print(f'The text file write RUINED, Ruined and ruined {counter} times.') #Printer antallet af ruined
+    # Printer antallet af ruined
+    return f'The text file write RUINED, Ruined and ruined {counter} times.'
 
-
-#ruin_work()
+# Til test
+# ruin_work()
