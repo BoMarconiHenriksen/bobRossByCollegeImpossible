@@ -21,8 +21,8 @@ import ruined_word
 if __name__ == '__main__':
     bob_ross_file = help_functions.bob_ross_file()
 
-bob_ross_dict = help_functions.convert_file_dict(bob_ross_file)
 
+bob_ross_dict = help_functions.convert_file_dict(bob_ross_file)
 
 print(count_lines.count_lines(bob_ross_dict))
 print(count_user_names.get_username_count(bob_ross_dict))

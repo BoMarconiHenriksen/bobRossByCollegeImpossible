@@ -53,10 +53,17 @@ def bob_ross_file():
     download(url, file_name)
     return file_name
 
+# Returner text filen
+
+
+def get_text_file():
+    return file_name
 
 # Konveter en text fil til et dictionary.
-def convert_file_dict(bob_ross_file):
-    with open(bob_ross_file, encoding='utf8') as fp:
+
+
+def convert_file_dict(file_name):
+    with open(file_name, encoding='utf8') as fp:
         global bob_ross_dict
         bob_ross_dict = {key: value for key, value in [
             line.strip().split(None, 1) for line in fp]}
