@@ -18,6 +18,11 @@ import help_functions
 import ruined_word
 
 
+def download(from_url, to_file):
+    if not os.path.isfile(to_file):
+        req.urlretrieve(from_url, to_file)
+
+
 if __name__ == '__main__':
     bob_ross_file = help_functions.bob_ross_file()
 
