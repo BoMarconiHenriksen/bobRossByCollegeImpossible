@@ -27,7 +27,7 @@ The project does only use dependencies which is part of Pythons Anaconda install
 ### How many lines does the .txt file have?  
 There are  181533 lines ine the Bob Ross datasetet.  
 
-### How many times does the .txt file write "RUINED", "Ruined" and "ruined" ?  
+### How many times does the .txt file write "RUINED" and "ruined" ?  
 The text file write RUINED, Ruined and ruined 5369 times.
 
 ### How many different users does the .txt file contain ?  
